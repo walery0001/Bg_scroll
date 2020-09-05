@@ -1,9 +1,23 @@
 
 body{
+
 	margin: 0;
 	padding: 0;
 	}
+.navBtn{
+display:flex ;
+	background-color: bisque;
+	padding-left: 1rem;
 
+}
+#menu1b{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+}
+.menuLink{
+	cursor: pointer;
+}
 #menu1, #menu2, #menu3{
 	height: 100vh;
 	margin: 0;

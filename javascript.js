@@ -10,9 +10,10 @@ const navBtn = document.querySelectorAll(".navBtn");
 const btn1 = document.getElementById('menu1a');
 const btn2 = document.getElementById('menu1b');
 
-const heightMenu = menu3.getBoundingClientRect().height;
+const heightMenu = menu2.getBoundingClientRect().height;
 const heightnavBtn = navBtnAll.getBoundingClientRect().height;
 const NavbarPlusMenu = heightMenu + heightnavBtn;
+const NavbarPlusMenu3 = heightMenu + heightMenu + heightnavBtn;
 console.log(NavbarPlusMenu)
 window.addEventListener('scroll', function(){
 	//const scrollMenu = window.pageYOffset;
@@ -27,9 +28,9 @@ window.addEventListener('scroll', function(){
 	menu1.animate({backgroundColor:'rgba(211, 54, 54, 1)'},{duration:2000,fill:'forwards'});
 }else{	menu1.animate({backgroundColor:'rgba(82, 90, 255, 1)'},{duration:2000,fill:'forwards'});}
 
-if(heightAllMenu < -630){
+if(heightAllMenu < -1030){
 	menu2.animate({backgroundColor:'rgba(211, 182, 54, 1)'},{duration:2000,fill:'forwards'});
-
+console.log(heightAllMenu)
 }else{	menu2.animate({backgroundColor:'rgba(211, 54, 54, 1)'},{duration:2000,fill:'forwards'});}
 
 });
@@ -44,9 +45,9 @@ navBtn.forEach(function(btn){
 
 let firstMnu = e.target.id
 const element = document.getElementById(firstMnu);
-if(element === menu1a){window.scrollTo({left:0, top:NavbarPlusMenu ,behavior:"smooth"});};
-	if(element === menu1b){window.scrollTo({left:0, top:heightMenu ,behavior:"smooth"});};
-		if(element === menu1c){window.scrollTo({left:0, top:900 ,behavior:"smooth"})};
+//if(element === menu1a){window.scrollTo({left:0, top:top,behavior:"smooth"});};
+	if(element === menu1b){window.scrollTo({left:0, top:NavbarPlusMenu ,behavior:"smooth"});};
+		if(element === menu1c){window.scrollTo({left:0, top:NavbarPlusMenu3 ,behavior:"smooth"})};
 	
 	})
 
