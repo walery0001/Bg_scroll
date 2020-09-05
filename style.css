@@ -1,0 +1,25 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	}
+
+#menu1, #menu2, #menu3{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+#menu1{
+	background-color:rgba(82, 90, 255, 1); 
+}
+#menu2{
+	background-color:rgba(211, 54, 54, 1); 
+}
+#menu3{
+	background-color:rgba(211, 182, 54, 1); 
+}
+.NewMenu1{
+	 
+	background-color: rgba(211, 54, 54, 1);
+}
