@@ -50,6 +50,7 @@ navBtn.forEach(function(btn){
 
 let firstMnu = e.target.id
 const element = document.getElementById(firstMnu);
+console.log(btn)
 //if(element === menu1a){window.scrollTo({left:0, top:top,behavior:"smooth"});};
 	if(element === menu1b){window.scrollTo({left:0, top:NavbarPlusMenu ,behavior:"smooth"});};
 		if(element === menu1c){window.scrollTo({left:0, top:NavbarPlusMenu3 ,behavior:"smooth"})};
