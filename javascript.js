@@ -19,6 +19,7 @@ const NavbarPlusMenu3 = heightMenu + heightMenu + heightnavBtn;
 
 
 
+
 //scroll change background
 window.addEventListener('scroll', function(){
 	//height from the top
@@ -59,4 +60,13 @@ const element = document.getElementById(firstMnu);
 
 topBtn.addEventListener('click', function(){
 	window.scrollTo({left:0,top:0, behavior:'smooth'});
+})
+
+// video play
+const video = document.querySelector('.video');
+const videoContainer = document.querySelector('.videoContainer');
+video.addEventListener('timeupdate', function(){
+	if(video.currentTime == 10.09){
+		videoContainer.remove();
+	}
 })
