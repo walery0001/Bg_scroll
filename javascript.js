@@ -66,7 +66,7 @@ topBtn.addEventListener('click', function(){
 const video = document.querySelector('.video');
 const videoContainer = document.querySelector('.videoContainer');
 video.addEventListener('timeupdate', function(){
-	if(video.currentTime == 10.09){
+	if(video.currentTime >= 10){
 		videoContainer.remove();
 	}
 })
